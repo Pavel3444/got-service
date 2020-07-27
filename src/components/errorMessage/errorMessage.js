@@ -1,17 +1,14 @@
 import React from 'react';
-import styled from "styled-components";
-
-const ErrImg = styled.img`
-max-width: 100%;
-`;
+import './errorMessage.css';
+import img from './error.jpg';
 
 const ErrorMessage = () => {
-return(
-    <>
-        <ErrImg src={process.env.PUBLIC_URL + 'img/error.jpg'} alt=""/>
-        <span>Something goes wrong</span>
-
-    </>
-)
+    return (
+        <>
+            <img src={img} alt='error'/>
+            <span>Something goes wrong</span>
+        </>
+    )
 };
+
 export default ErrorMessage;
